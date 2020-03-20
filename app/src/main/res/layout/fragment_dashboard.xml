@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+
+
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rank">
+
+  <Button
+      android:layout_width="50dp"
+      android:layout_height="25dp"
+      android:textSize="13dp"
+      android:text="今日"
+      android:textColor="#ffffff"
+      android:id="@+id/today_btn"
+      android:background="@drawable/button_rank"
+    />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:id="@+id/yes_btn"
+
+
+        android:textSize="13dp"
+        android:textColor="#666666"
+        android:background="@drawable/button_rank2"
+
+
+        android:text="昨日"
+ />
+
+
+    </LinearLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/help"
+            android:layout_marginRight="50px"
+            android:layout_alignParentRight="true"
+            />
+
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:id="@+id/rank_title"
+        android:textSize="25dp"
+        android:text="今日榜单"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:textColor="@color/colorPrimary"
+
+            android:paddingBottom="5dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="5dp"
+            android:text="排名"
+            android:textSize="20dp"
+            android:layout_weight="1"
+
+
+            />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="用户名"
+            android:textSize="20dp"
+
+
+            android:layout_weight="1.7"
+            />
+        <TextView
+            android:id="@+id/value_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+
+            android:maxLines="2"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="奖励"
+            android:textSize="20dp"
+
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news_list"/>
+
+
+
+
+
+</LinearLayout>
